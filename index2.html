@@ -1,0 +1,3395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6efcc5b651.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #container {
+            width: 100%;
+            height: 5200px;
+            background-color: rgb(183, 183, 183);
+            border: 2px solid green;
+        }
+
+        .header {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            background-color: black;
+        }
+
+        .nav-logo-div {
+            width: 100px;
+            height: 60px;
+            background-image: url(/images/amazon\ logo\ 4\ exact.png);
+            background-size: 100% 100%;
+            margin-left: 20px;
+            /* border: 1px solid grey; */
+        }
+
+        .address-div {
+            width: 85px;
+            height: 60px;
+            /* margin-left: 10px; */
+            /* border: 1px solid grey; */
+        }
+
+        .location-div {
+            width: 20px;
+            height: 30px;
+            position: relative;
+            left: 23px;
+            top: 30px;
+            color: white;
+            font-size: 19px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* margin-top: 35px; */
+            /* border: .5px solid red; */
+        }
+
+        .deliver-to {
+            padding-left: 25px;
+            padding-top: 15px;
+            color: rgb(163, 158, 158);
+            font-size: 14px;
+        }
+
+        .pakistan {
+            color: white;
+            padding-left: 25px;
+        }
+
+        .border:hover {
+            border: 1px solid grey;
+        }
+
+        .search-main-div {
+            width: 630px;
+            height: 40px;
+            display: flex;
+            margin-left: 15px;
+            margin-top: 13px;
+            /* border: 1px solid goldenrod; */
+        }
+
+        .select-one {
+            height: 40px;
+        }
+
+        .search-bar {
+            width: 480px;
+            height: 40px;
+            margin-left: 0%;
+            font-size: 19px;
+            border: none;
+            border-style: none;
+        }
+
+        .search-icon-div {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: goldenrod;
+        }
+
+        .language-main-div {
+            width: 65px;
+            height: 60px;
+            margin-left: 10px;
+            display: flex;
+            /* border: 1px solid green; */
+        }
+
+        .select-two {
+            width: 38px;
+            margin-top: 32px;
+        }
+
+        .flag-div {
+            width: 20px;
+            height: 20px;
+            /* margin-left: 15px; */
+            margin-top: 30px;
+            background-image: url(/images/usa\ flag.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid red; */
+        }
+
+        .sign-in-main-div {
+            width: 120px;
+            height: 60px;
+            margin-left: 10px;
+            /* border: 1px solid yellow; */
+        }
+
+        .hello-sign-in {
+            color: rgb(231, 229, 229);
+            padding-left: 15px;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        .accounts {
+            color: white;
+            font-weight: bold;
+            /* padding-top: 5px; */
+        }
+
+        .returns-order-div {
+            width: 75px;
+            height: 60px;
+            margin-left: 10px;
+            /* border: 1px solid green; */
+        }
+
+        .returns {
+            color: rgb(231, 229, 229);
+            padding-left: 5px;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        .orders {
+            color: white;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .cart-main-div {
+            width: 85px;
+            height: 60px;
+            display: flex;
+            /* border: .5px solid green; */
+        }
+
+        .cart-logo-div {
+            width: 35px;
+            height: 40px;
+            color: white;
+            margin-top: 5px;
+            padding-top: 10px;
+            font-size: 30px;
+            /* border: .5px solid red; */
+        }
+
+        .cart {
+            color: white;
+            padding-top: 30px;
+            font-size: 21px;
+        }
+
+        .first-image-div {
+            width: 100%;
+            height: 500px;
+            background-image: url(/images/first-amazon\ image.jpg);
+            background-size: 100% 100%;
+            border: 1px solid red;
+        }
+
+        .cards-div {
+            width: 100%;
+            height: 150px;
+            /* border: 1px solid blue; */
+        }
+
+        .cards-main-div-one {
+            width: 100%;
+            height: 440px;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: -285px;
+            /* border: 1px solid red; */
+        }
+
+        .card-one {
+            width: 23%;
+            height: 400px;
+            /* font-size: 20px; */
+            padding-left: 20px;
+            padding-top: 20px;
+            background-color: white;
+            background-image: url();
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .card-two {
+            width: 23%;
+            height: 420px;
+            background-color: white;
+            background-image: url();
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .card-three {
+            width: 23%;
+            height: 420px;
+            background-color: white;
+            background-image: url();
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .card-four {
+            width: 23%;
+            height: 420px;
+            background-color: white;
+            background-image: url();
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .card-one-sub-div {
+            width: 90%;
+            height: 300px;
+            margin-top: 15px;
+            margin-left: 3px;
+            background-image: url(/images/speaker\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid red; */
+        }
+
+        .shop-gaming {
+            margin-top: 17px;
+
+        }
+
+        .a-gaming {
+            color: rgb(83, 112, 197);
+            text-decoration: none;
+        }
+
+        .a-gaming:hover {
+            color: grey;
+        }
+
+        .card2-sub-div1 {
+            width: 90%;
+            height: 120px;
+            margin-left: 15px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid blue; */
+        }
+
+        .card2-sub-div2 {
+            width: 90%;
+            height: 120px;
+            margin-left: 15px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-for-home {
+            font-size: 23px;
+            padding-top: 25px;
+            padding-left: 15px;
+        }
+
+        .card2-sub-div1-content-div {
+            width: 47%;
+            height: 120px;
+            /* border: 1px solid red; */
+        }
+
+        .card2-sub-div1-image-div {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/CleaningTool.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid peru; */
+        }
+
+        .card2-sub-div1-content-div2 {
+            width: 47%;
+            height: 120px;
+            /* border: 1px solid red; */
+        }
+
+        .card2-sub-div1-image-div2 {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/HomeStorage.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid peru; */
+        }
+
+        .card2-sub-div2-content-div-one {
+            width: 47%;
+            height: 120px;
+            /* border: 1px solid red; */
+        }
+
+        .card2-sub-div2-image-div-one {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/HomeDecor.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid peru; */
+        }
+
+        .card2-sub-div2-content-div-two {
+            width: 47%;
+            height: 120px;
+
+            /* border: 1px solid red; */
+        }
+
+        .card2-sub-div2-image-div-two {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/Bedding\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid peru; */
+        }
+
+        .discover-more {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        /* card 3 start */
+
+
+        .card3-sub-div1 {
+            width: 90%;
+            height: 120px;
+            margin-left: 15px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid blue; */
+        }
+
+        .card3-sub-div2 {
+            width: 90%;
+            height: 120px;
+            margin-left: 15px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-for-home {
+            font-size: 23px;
+            padding-top: 25px;
+            padding-left: 15px;
+        }
+
+        .card3-sub-div1-content-div-one {
+            width: 47%;
+            height: 120px;
+            /* border: 1px solid red; */
+        }
+
+        .card3-sub-div1-image-div-one {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/kitchen.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid purple; */
+        }
+
+        .card3-sub-div1-content-div-two {
+            width: 47%;
+            height: 120px;
+            /* border: 1px solid red; */
+        }
+
+        .card3-sub-div1-image-div-two {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/home\ improvement.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid purple; */
+        }
+
+        /* card 3 sub div 1 complete  */
+
+        .card3-sub-div2-content-div {
+            width: 47%;
+            height: 120px;
+            /* border: 1px solid red; */
+        }
+
+        .card3-sub-div2-image-div {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/decor\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid peru; */
+        }
+
+        .card3-sub-div2-content-div-two {
+            width: 47%;
+            height: 120px;
+            /* border: 1px solid red; */
+        }
+
+        .card3-sub-div2-image-div-two {
+            width: 100%;
+            height: 100px;
+            background-image: url(/images/bedding\ bath.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid peru; */
+        }
+
+        .discover-more {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        /* card 4 started */
+
+        .top-categories {
+            font-size: 24px;
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+
+        .cooker-div {
+            width: 87%;
+            height: 140px;
+            margin-top: 15px;
+            margin-left: 17px;
+            background-image: url(/images/cooker\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .cooker {
+            padding-left: 15px;
+            padding-top: 2px;
+        }
+
+        .card4-sub-div {
+            width: 87%;
+            height: 110px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 15px;
+            /* border: 1px solid blue; */
+        }
+
+        .coffee-div {
+            width: 32%;
+            height: 110px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .coffee-image-div {
+            width: 100%;
+            height: 90px;
+            background-image: url(/images/cofee\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid red; */
+        }
+
+        .pots-div {
+            width: 32%;
+            height: 110px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .pots-image-div {
+            width: 100%;
+            height: 90px;
+            background-image: url(/images/pots\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid red; */
+        }
+
+        .kettles-div {
+            width: 32%;
+            height: 110px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .kettles-image-div {
+            width: 100%;
+            height: 90px;
+            background-image: url(/images/kettles.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid red; */
+        }
+
+        .cards-main-div-two {
+            width: 100%;
+            height: 440px;
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 2px solid peru; */
+        }
+
+        .card5 {
+            width: 24.5%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card6 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card7 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card8 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card5-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card5-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card5-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/ester\ bunny.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card5-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card5-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/ester\ basket.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card5 lower div start */
+
+        .card5-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card5-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card5-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/ester\ decor.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card5-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card5-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/ester\ baking.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester5 {
+            margin-top: 38px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 5 complete */
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card6-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card6-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card6-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/kitchen.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card6-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card6-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/home\ improvement.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card5 lower div start */
+
+        .card6-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card6-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card6-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/decor\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card6-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card6-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/bedding\ bath.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester6 {
+            margin-top: 17px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 6 complete */
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card7-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card7-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card7-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/dress.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card7-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card7-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/knits.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card7 lower div start */
+
+        .card7-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card7-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card7-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/jackets.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card7-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card7-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/jewelry.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .explore-more {
+            margin-top: 35px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 7 complete */
+
+        .get-ready {
+            font-size: 26px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card8-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card8-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card8-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/baskets.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card8-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card8-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/hardware.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card8 lower div start */
+
+        .card8-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card8-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card8-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/accent\ furniture.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card8-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card8-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/wallpaper.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester {
+            margin-top: 5px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 8 complete and next div start */
+
+        .best-seller-main-div {
+            width: 97%;
+            height: 280px;
+            margin-left: 20px;
+            display: flex;
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        .blue-shoes-div {
+            width: 16%;
+            height: 280px;
+            background-image: url(/images/blue\ shoes\ div.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .black-shoes-div {
+            width: 16%;
+            height: 280px;
+            background-image: url(/images/black\ shoes\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .black-shirt-div {
+            width: 16%;
+            height: 280px;
+            background-image: url(/images/black\ shirt\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .man-div {
+            width: 16%;
+            height: 280px;
+            background-image: url(/images/black\ shirt\ man\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .white-shirt-div {
+            width: 16%;
+            height: 280px;
+            background-image: url(/images/white\ shirt\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .sleeper-div {
+            width: 16%;
+            height: 280px;
+            background-image: url(/images/sleeper\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid green; */
+        }
+
+        .best-seller-div {
+            margin-top: 20px;
+            margin-left: 17px;
+        }
+
+        .international-top-seller-main-div {
+            width: 97%;
+            height: 280px;
+            margin-top: 20px;
+            margin-left: 20px;
+            /* display: flex; */
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        .international-seller-div {
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            /* border: 1px solid green; */
+        }
+
+        .international-images-div {
+            width: 100%;
+            height: 245px;
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+
+        .red-bottle-div {
+            width: 16%;
+            height: 244px;
+            background-image: url(/images/red\ bottle.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .white-bottle-div {
+            width: 16%;
+            height: 244px;
+            background-image: url(/images/white\ bottle.jpg );
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .blue-kattle-div {
+            width: 16%;
+            height: 244px;
+            background-image: url(/images/blue\ kattle.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .chocolate-div {
+            width: 16%;
+            height: 244px;
+            background-image: url(/images/black\ chocolate.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .spon-div {
+            width: 16%;
+            height: 244px;
+            background-image: url(/images/spon\ image.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .green-bottle-div {
+            width: 16%;
+            height: 244px;
+            background-image: url(/images/green\ bottle\ image.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        /* cards main div three start */
+
+
+        .cards-main-div-three {
+            width: 100%;
+            height: 440px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            /* border: 2px solid peru; */
+        }
+
+        .card9 {
+            width: 24.5%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card10 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card11 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card12 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card9-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card9-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card9-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/makeup.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card9-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card9-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/brushes.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card5 lower div start */
+
+        .card9-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card9-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card9-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/sponges.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card9-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card9-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/mirrors.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester9 {
+            margin-top: 10px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 9 complete */
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card10-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card10-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card10-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/clothing.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card10-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card10-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/trackers.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card5 lower div start */
+
+        .card10-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card10-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card10-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/equipment.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card10-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card10-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/deals.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester10 {
+            margin-top: 50px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 10 complete */
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card11-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card11-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card11-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/backpacks.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card11-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card11-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/suitcase.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card11 lower div start */
+
+        .card11-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card11-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card11-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/accessories.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card11-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card11-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/handbags.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .explore-more11 {
+            margin-top: 10px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 11 complete */
+
+        .get-ready {
+            font-size: 26px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card12-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card12-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card12-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/pc\ gaming.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card12-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card12-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/xbox.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card12 lower div start */
+
+        .card12-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card12-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card12-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/play\ station.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card12-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card12-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/nintendo\ switch.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester12 {
+            margin-top: 40px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card main div three and card 12 complete  and next div start */
+
+        .popular-products-main-div {
+            width: 97%;
+            height: 280px;
+            margin-left: 20px;
+            margin-top: 10px;
+            /* display: flex; */
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        .popular-products-div {
+            width: 100%;
+            height: 30px;
+            padding-top: 20px;
+            /* border: 1px solid green; */
+        }
+
+        .popular-products-text {
+            font-size: 21px;
+            padding-left: 20px;
+
+        }
+
+        .popular-products-image-div {
+            width: 100%;
+            height: 225px;
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+
+        .body-lotion-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/body\ lotion.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .body-wash-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/body\ wash.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .baby-shampo-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/baby\ shampoo.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .shave-oil-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/shave\ oil.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .vaseline-golden-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/vaseline\ golden.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .nizoral-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/nizoral.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .vaseline-glow-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/vaseline\ glow.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        /* popular products div complete here */
+
+        /* <!-- popular products div complete and top picks div start --> */
+
+        .top-picks-products-main-div {
+            width: 97%;
+            height: 280px;
+            margin-left: 20px;
+            margin-top: 20px;
+            /* display: flex; */
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        .top-picks-products-div {
+            width: 100%;
+            height: 30px;
+            padding-top: 20px;
+            /* border: 1px solid green; */
+        }
+
+        .top-picks-products-text {
+            font-size: 21px;
+            padding-left: 20px;
+
+        }
+
+        .top-picks-products-image-div {
+            width: 100%;
+            height: 225px;
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+
+        .dron-div {
+            width: 16%;
+            height: 224px;
+            background-image: url(/images/dron\ image.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .poetry-book-div {
+            width: 16%;
+            height: 224px;
+            background-image: url(/images/poetry\ image.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .drill-tools-div {
+            width: 16%;
+            height: 224px;
+            background-image: url(/images/drill\ tools.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .bicycle-div {
+            width: 16%;
+            height: 224px;
+            background-image: url(/images/bicycle.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .lcd-div {
+            width: 16%;
+            height: 224px;
+            background-image: url(/images/lcd\ image.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .phone-stand-div {
+            width: 16%;
+            height: 224px;
+            background-image: url(/images/phone\ stand.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        /* .vaseline-glow-div{
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/vaseline\ glow.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        /* } */
+
+
+
+        /* cards main div four start */
+
+
+        .cards-main-div-four {
+            width: 100%;
+            height: 440px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            /* border: 2px solid peru; */
+        }
+
+        .card13 {
+            width: 24.5%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card14 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card15 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .card16 {
+            width: 23%;
+            height: 430px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card13-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card13-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card13-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/women\ watch.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card13-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card13-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/men\ watch.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card13 lower div start */
+
+        .card13-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card13-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card13-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/girls\ watch.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card13-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card13-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/boys\ watch.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester13 {
+            margin-top: 40px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 13 complete */
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card14-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card14-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card14-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/outdor\ play\ set.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card14-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card14-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/learning\ toys.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card14 lower div start */
+
+        .card14-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card14-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card14-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/acttion\ figure.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card14-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card14-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/pretend\ play\ toys.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester14 {
+            margin-top: 20px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 14 complete */
+
+        .get-ready {
+            font-size: 22px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card15-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card15-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card15-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/books.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card15-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card15-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/fashion.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card15 lower div start */
+
+        .card15-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card15-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card15-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/pc.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card15-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card15-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/beauty.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .explore-more15 {
+            margin-top: 40px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+        /* card 15 complete */
+
+        .get-ready {
+            font-size: 26px;
+            padding-top: 20px;
+            padding-left: 15px;
+
+        }
+
+        .card16-upper-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card16-upper-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card16-upper-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/kitchen\ image.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card16-upper-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card16-upper-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/home\ decor2.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        /* card16 lower div start */
+
+        .card16-lower-main-div {
+            width: 90%;
+            height: 140px;
+            margin-left: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: top;
+            /* border: 1px solid green; */
+        }
+
+        .card16-lower-div-one {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card16-lower-div-one-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/dinning.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .card16-lower-div-two {
+            width: 47%;
+            height: 140px;
+            /* border: 1px solid black; */
+        }
+
+        .card16-lower-div-two-image {
+            width: 100%;
+            height: 120px;
+            background-image: url(/images/smart\ home.jpg);
+            background-size: 100% 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .shop-ester16 {
+            margin-top: 40px;
+            margin-left: 15px;
+            font-size: 21px;
+        }
+
+
+        /* card 4 main div complete */
+
+        /* best seller books div complete */
+
+        .best-books-main-div {
+            width: 97%;
+            height: 299px;
+            margin-left: 20px;
+            margin-top: 10px;
+            /* display: flex; */
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        .best-books-div {
+            width: 100%;
+            height: 30px;
+            padding-top: 20px;
+            /* border: 1px solid green; */
+        }
+
+        .best-books-text {
+            font-size: 21px;
+            padding-left: 20px;
+
+        }
+
+        .best-books-image-div {
+            width: 100%;
+            height: 225px;
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+
+        .ndy-book-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/ndy\ book.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .theo-of-golden-book-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/theo\ of\ golden.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .catch-the-ester-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/catch\ the\ ester.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .correspondent-book-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/correspondent\ book.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .pete-the-cat-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/pete\ the\ cat.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .mad-libs-book-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/mad\ libs.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .illama-book-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/illama\ book.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        /* best seller in books div complete here */
+
+
+        /* best seller in beauty div complete */
+
+        .best-beauty-main-div {
+            width: 97%;
+            height: 299px;
+            margin-left: 20px;
+            margin-top: 10px;
+            /* display: flex; */
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        .best-beauty-div {
+            width: 100%;
+            height: 30px;
+            padding-top: 20px;
+            /* border: 1px solid green; */
+        }
+
+        .best-beauty-text {
+            font-size: 21px;
+            padding-left: 20px;
+
+        }
+
+        .best-beauty-image-div {
+            width: 100%;
+            height: 225px;
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+
+        .mighty-patch-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/mighty\ patch.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .makeup-remover-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/makeup\ remover.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .cotton-rounds-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/cotton\ rounds.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .lash-sensa-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/lash\ sensa.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .clean-towels-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/clean\ towels.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .biodance-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/biodance.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        .elta-md-div {
+            width: 14%;
+            height: 224px;
+            background-image: url(/images/elta\ md.jpg);
+            background-size: 100% 100%;
+            /* border: .5px solid green; */
+        }
+
+        /* best seller in beauty div complete here */
+
+        .signin-main-div {
+            width: 100%;
+            height: 190px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        .personalized-recommendation-div {
+            width: 32%;
+            height: 150px;
+            /* border: 1px solid green; */
+        }
+
+        .personalized-text {
+            font-size: 27px;
+            padding-top: 30px;
+        }
+
+        .signin-btn {
+            width: 50%;
+            height: 30px;
+            text-align: center;
+            margin-left: 25%;
+            margin-top: 20px;
+            border-radius: 15px;
+            background-color: gold;
+            border: none;
+            /* border: 1px solid goldenrod; */
+        }
+
+        .new-customer {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        /* personalized div complete  and footer div start */
+
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.amazon-footer-container {
+    font-family: Arial, sans-serif;
+    background-color: #232f3e;
+    color: #ddd;
+}
+
+/* Back to top */
+.back-to-top {
+    background-color: #37475a;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.back-to-top a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-to-top:hover {
+    background-color: #485769;
+}
+
+/* Footer content */
+.footer-main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Columns layout */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Each column */
+.footer-col {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-col h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Links */
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.footer-divider {
+    border: 0.5px solid #3a4553;
+    margin: 30px 0;
+}
+
+/* Bottom section */
+.footer-bottom-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.footer-logo img {
+    width: 100px;
+}
+
+/* Selectors */
+.settings-selectors {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.selector-box {
+    border: 1px solid #848688;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.selector-box:hover {
+    border-color: #fff;
+}
+
+/* Icons inside selector */
+.selector-box .icon {
+    margin-right: 5px;
+}
+
+.selector-box .arrows {
+    margin-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-bottom-settings {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+    /* <!-- first footer complete and 2nd footer start --> */
+
+    .amazon-directory-footer {
+        background-color: #131a22; /* Amazon's dark background */
+        padding: 40px 0 30px 0;
+        font-family: "Arial", sans-serif;
+        color: #ddd;
+    }
+
+    .directory-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 20px 10px;
+        padding-bottom: 40px;
+    }
+
+    .footer-item a {
+        text-decoration: none;
+        color: #ddd;
+        display: block;
+    }
+
+    .footer-item a:hover b {
+        text-decoration: underline;
+    }
+
+    .footer-item b {
+        font-size: 11.5px;
+        color: #fff;
+        line-height: 14px;
+    }
+
+    .footer-item span {
+        font-size: 10.5px;
+        color: #999;
+        line-height: 12px;
+    }
+
+    /* Legal and Copyright Styles */
+    .footer-legal {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 12px;
+    }
+
+    .legal-links {
+        margin-bottom: 5px;
+    }
+
+    .legal-links a {
+        color: #ddd;
+        text-decoration: none;
+        margin: 0 8px;
+    }
+
+    .legal-links a:hover {
+        text-decoration: underline;
+    }
+
+    .copyright {
+        color: #ddd;
+        margin-top: 5px;
+    }
+
+    /* Special style for the Privacy Choices link to align the icon */
+    .privacy-choices {
+        display: inline-flex;
+        align-items: center;
+    }
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header class="header">
+            <div class="nav-logo-div border"></div>
+            <div class="location-div">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="address-div border">
+                <p class="deliver-to">Deliver to</p>
+                <p class="pakistan">Pakistan</p>
+            </div>
+            <div class="search-main-div">
+                <select class="select-one">
+                    <option value="text">All Department</option>
+                    <option value="text">Arts & Crafts</option>
+                    <option value="text">Automotive</option>
+                </select>
+                <input type="text" class="search-bar" placeholder="Search Amazon">
+                <div class="search-icon-div">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="language-main-div  border">
+                <div class="flag-div"></div>
+                <div class="select-language-div ">
+                    <select class="select-two">
+                        <option value="text">English</option>
+                        <option value="text">Spanish</option>
+                        <option value="text">Arabic</option>
+                        <option value="text">Urdu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sign-in-main-div border">
+                <p class="hello-sign-in">Hello,sign in</p>
+                <p class="accounts">Accounts & Lists </p>
+            </div>
+            <div class="returns-order-div border">
+                <p class="returns">Returns</p>
+                <p class="orders">& Orders</p>
+            </div>
+            <div class="cart-main-div border">
+                <div class="cart-logo-div">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <b class="cart">Cart</b>
+            </div>
+
+        </header>
+        <div class="first-image-div"></div>
+        <div class="cards-div">
+            <div class="cards-main-div-one">
+                <div class="card-one">
+                    <h3 class="game-on">Get your game on</h3>
+                    <div class="card-one-sub-div"></div>
+                    <div class="shop-gaming"><a class="a-gaming" href="">Shop gaming</a></div>
+                </div>
+                <div class="card-two">
+                    <h3 class="shop-for-home">Shop for your home essentials</h3>
+                    <div class="card2-sub-div1">
+                        <div class="card2-sub-div1-content-div">
+                            <div class="card2-sub-div1-image-div"></div>
+                            <p class="cleaning-tool">Cleaning Tools</p>
+                        </div>
+                        <div class="card2-sub-div1-content-div2">
+                            <div class="card2-sub-div1-image-div2"></div>
+                            <p class="home-storage">Home Storage</p>
+                        </div>
+                    </div>
+                    <div class="card2-sub-div2">
+                        <div class="card2-sub-div2-content-div-one">
+                            <div class="card2-sub-div2-image-div-one"></div>
+                            <p class="cleaning-tool">Home Decor</p>
+                        </div>
+                        <div class="card2-sub-div2-content-div-two">
+                            <div class="card2-sub-div2-image-div-two"></div>
+                            <p class="home-storage">Bedding</p>
+                        </div>
+                    </div>
+                    <div class="discover-more"><a class="a-gaming" href="">Discover more in Home</a></div>
+                </div>
+
+                <!-- card 3 start -->
+
+                <div class="card-three">
+                    <h3 class="shop-for-home">New home arrivals under $50</h3>
+                    <div class="card3-sub-div1">
+                        <div class="card3-sub-div1-content-div-one">
+                            <div class="card3-sub-div1-image-div-one"></div>
+                            <p class="cleaning-tool">Kitchen&Dinning</p>
+                        </div>
+                        <div class="card3-sub-div1-content-div-two">
+                            <div class="card3-sub-div1-image-div-two"></div>
+                            <p class="home-storage" style="font-size: 15px;">Home improvement</p>
+                        </div>
+                    </div>
+                    <div class="card3-sub-div2">
+                        <div class="card3-sub-div2-content-div">
+                            <div class="card3-sub-div2-image-div"></div>
+                            <p class="cleaning-tool">Decor</p>
+                        </div>
+                        <div class="card3-sub-div2-content-div-two">
+                            <div class="card3-sub-div2-image-div-two"></div>
+                            <p class="home-storage">bedding&Bath</p>
+                        </div>
+                    </div>
+                    <div class="discover-more"><a class="a-gaming" href="">Shop the latest from Home</a></div>
+                </div>
+                <!-- card 4 -->
+                <div class="card-four">
+                    <h3 class="top-categories">Top categories in Kitchen appliances</h3>
+                    <div class="cooker-div"></div>
+                    <h4 class="cooker">Cooker</h4>
+                    <div class="card4-sub-div">
+                        <div class="coffee-div">
+                            <div class="coffee-image-div"></div>
+                            <h4 class="coffee">Coffee</h4>
+                        </div>
+                        <div class="pots-div">
+                            <div class="pots-image-div"></div>
+                            <h4 class="pots">Pots and....</h4>
+                        </div>
+                        <div class="kettles-div">
+                            <div class="kettles-image-div"></div>
+                            <h4 class="kettles">Kettles</h4>
+                        </div>
+                    </div>
+                    <div class="discover-more"><a class="a-gaming" href="">Explore all products in Kitchen</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd main cards div -->
+
+        <div class="cards-main-div-two">
+            <div class="card5">
+                <h2 class="get-ready">Get ready for Easter</h2>
+                <div class="card5-upper-main-div">
+                    <div class="card5-upper-div-one">
+                        <div class="card5-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Ester bunny</h5>
+                    </div>
+                    <div class="card5-upper-div-two">
+                        <div class="card5-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Ester baskets</h5>
+                    </div>
+
+                </div>
+
+                <!-- card5 lower div start -->
+
+                <div class="card5-lower-main-div">
+                    <div class="card5-lower-div-one">
+                        <div class="card5-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Ester decor</h5>
+                    </div>
+                    <div class="card5-lower-div-two">
+                        <div class="card5-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Ester baking</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester5"><a class="a-gaming" href="">Shop for Ester</a></div>
+            </div>
+
+            <!-- card5 complete -->
+
+            <div class="card6">
+                <h2 class="get-ready">New home arrivals under $50</h2>
+                <div class="card6-upper-main-div">
+                    <div class="card6-upper-div-one">
+                        <div class="card6-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Kitchen & Dinning</h5>
+                    </div>
+                    <div class="card6-upper-div-two">
+                        <div class="card6-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Home Improvement</h5>
+                    </div>
+
+                </div>
+
+                <!-- card6 lower div start -->
+
+                <div class="card6-lower-main-div">
+                    <div class="card6-lower-div-one">
+                        <div class="card6-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Decor</h5>
+                    </div>
+                    <div class="card6-lower-div-two">
+                        <div class="card6-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets-6">Bedding&Bath</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester6"><a class="a-gaming" href="">Shop the latest from Home</a></div>
+            </div>
+
+            <!-- card 6 complete -->
+
+            <div class="card7">
+                <h2 class="get-ready">Fashion trends you like</h2>
+                <div class="card7-upper-main-div">
+                    <div class="card7-upper-div-one">
+                        <div class="card7-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Dress</h5>
+                    </div>
+                    <div class="card7-upper-div-two">
+                        <div class="card7-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">knits</h5>
+                    </div>
+
+                </div>
+
+                <!-- card7 lower div start -->
+
+                <div class="card7-lower-main-div">
+                    <div class="card7-lower-div-one">
+                        <div class="card7-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Jackets</h5>
+                    </div>
+                    <div class="card7-lower-div-two">
+                        <div class="card7-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Jewelry</h5>
+                    </div>
+
+                </div>
+                <div class="explore-more"><a class="a-gaming" href="">Explore more</a></div>
+            </div>
+
+            <!-- card 7 complete -->
+
+            <div class="card8">
+                <h2 class="get-ready">Easy updates for elevated spaces</h2>
+                <div class="card8-upper-main-div">
+                    <div class="card8-upper-div-one">
+                        <div class="card8-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Baskets & Hampers</h5>
+                    </div>
+                    <div class="card8-upper-div-two">
+                        <div class="card8-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Hardware</h5>
+                    </div>
+
+                </div>
+
+                <!-- card8 lower div start -->
+
+                <div class="card8-lower-main-div">
+                    <div class="card8-lower-div-one">
+                        <div class="card8-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Accent Furniture</h5>
+                    </div>
+                    <div class="card8-lower-div-two">
+                        <div class="card8-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">wallpaper & paint</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester"><a class="a-gaming" href="">Shop home products</a></div>
+            </div>
+        </div>
+
+        <!-- card 8 complete and next div start -->
+
+        <div class="best-seller-div">
+            <h3 class="best-seller">Best Sellers in Clothing, Shoes & Jewelry</h3>
+        </div>
+
+        <div class="best-seller-main-div">
+            <div class="blue-shoes-div"></div>
+            <div class="black-shoes-div"></div>
+            <div class="black-shirt-div"></div>
+            <div class="man-div"></div>
+            <div class="white-shirt-div"></div>
+            <div class="sleeper-div"></div>
+        </div>
+
+        <!-- best selller div complete -->
+
+        <div class="international-top-seller-main-div">
+            <div class="international-seller-div">
+                <h3 class="international-seller-text">International top sellers in Kitchen</h3>
+            </div>
+            <div class="international-images-div">
+                <div class="red-bottle-div"></div>
+                <div class="white-bottle-div"></div>
+                <div class="blue-kattle-div"></div>
+                <div class="chocolate-div"></div>
+                <div class="spon-div"></div>
+                <div class="green-bottle-div"></div>
+            </div>
+        </div>
+
+        <!-- card main div three start -->
+
+        <div class="cards-main-div-three">
+            <div class="card9">
+                <h2 class="get-ready">Level up your beauty routine</h2>
+                <div class="card9-upper-main-div">
+                    <div class="card9-upper-div-one">
+                        <div class="card9-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Makeup</h5>
+                    </div>
+                    <div class="card9-upper-div-two">
+                        <div class="card9-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets9">Brushes</h5>
+                    </div>
+
+                </div>
+
+                <!-- card9 lower div start -->
+
+                <div class="card5-lower-main-div">
+                    <div class="card9-lower-div-one">
+                        <div class="card9-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Sponges</h5>
+                    </div>
+                    <div class="card9-lower-div-two">
+                        <div class="card9-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Mirrors</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester9"><a class="a-gaming" href="">See more</a></div>
+            </div>
+
+            <!-- card9 complete -->
+
+            <div class="card10">
+                <h2 class="get-ready">Gear up to get fit</h2>
+                <div class="card10-upper-main-div">
+                    <div class="card10-upper-div-one">
+                        <div class="card10-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Clothing</h5>
+                    </div>
+                    <div class="card10-upper-div-two">
+                        <div class="card10-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Trackers</h5>
+                    </div>
+
+                </div>
+
+                <!-- card10 lower div start -->
+
+                <div class="card10-lower-main-div">
+                    <div class="card10-lower-div-one">
+                        <div class="card10-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Equipment</h5>
+                    </div>
+                    <div class="card10-lower-div-two">
+                        <div class="card10-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets-10">Deals</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester10"><a class="a-gaming" href="">Discover more</a></div>
+            </div>
+
+            <!-- card 10 complete -->
+
+            <div class="card11">
+                <h2 class="get-ready">Most-loved travel essentials</h2>
+                <div class="card11-upper-main-div">
+                    <div class="card11-upper-div-one">
+                        <div class="card11-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Backpacks</h5>
+                    </div>
+                    <div class="card11-upper-div-two">
+                        <div class="card11-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Suitcase</h5>
+                    </div>
+
+                </div>
+
+                <!-- card11 lower div start -->
+
+                <div class="card11-lower-main-div">
+                    <div class="card11-lower-div-one">
+                        <div class="card11-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">accessories</h5>
+                    </div>
+                    <div class="card11-lower-div-two">
+                        <div class="card11-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Handbags</h5>
+                    </div>
+
+                </div>
+                <div class="explore-more11"><a class="a-gaming" href="">Discover more</a></div>
+            </div>
+
+            <!-- card 11 complete -->
+
+            <div class="card12">
+                <h2 class="get-ready">Level up your gaming</h2>
+                <div class="card12-upper-main-div">
+                    <div class="card12-upper-div-one">
+                        <div class="card12-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Pc gaming</h5>
+                    </div>
+                    <div class="card12-upper-div-two">
+                        <div class="card12-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Xbox</h5>
+                    </div>
+
+                </div>
+
+                <!-- card12 lower div start -->
+
+                <div class="card12-lower-main-div">
+                    <div class="card12-lower-div-one">
+                        <div class="card12-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">PlayStation</h5>
+                    </div>
+                    <div class="card12-lower-div-two">
+                        <div class="card12-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Nintendo Switch</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester12"><a class="a-gaming" href="">Shop the latest in gaming</a></div>
+            </div>
+        </div>
+
+
+        <!-- /* card main div three and card 12 complete  and next div start */ -->
+
+        <div class="popular-products-main-div">
+            <div class="popular-products-div">
+                <h4 class="popular-products-text">Popular products in Beauty internationally</h4>
+            </div>
+            <div class="popular-products-image-div">
+                <div class="body-lotion-div"></div>
+                <div class="body-wash-div"></div>
+                <div class="baby-shampo-div"></div>
+                <div class="shave-oil-div"></div>
+                <div class="vaseline-golden-div"></div>
+                <div class="nizoral-div"></div>
+                <div class="vaseline-glow-div"></div>
+
+            </div>
+        </div>
+
+        <!-- popular products div complete and top picks div start -->
+
+        <div class="top-picks-products-main-div">
+            <div class="top-picks-products-div">
+                <h4 class="top-picks-products-text">Top picks for Pakistan</h4>
+            </div>
+            <div class="top-picks-products-image-div">
+                <div class="dron-div"></div>
+                <div class="poetry-book-div"></div>
+                <div class="drill-tools-div"></div>
+                <div class="bicyle--div"></div>
+                <div class="lcd-div"></div>
+                <div class="phone-stand-div"></div>
+
+            </div>
+        </div>
+
+        <!-- card main div fout start -->
+
+        <div class="cards-main-div-four">
+            <div class="card13">
+                <h2 class="get-ready">Most-loved watches</h2>
+                <div class="card13-upper-main-div">
+                    <div class="card13-upper-div-one">
+                        <div class="card13-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Women</h5>
+                    </div>
+                    <div class="card13-upper-div-two">
+                        <div class="card13-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets13">Men</h5>
+                    </div>
+
+                </div>
+
+                <!-- card13 lower div start -->
+
+                <div class="card13-lower-main-div">
+                    <div class="card13-lower-div-one">
+                        <div class="card13-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Girls</h5>
+                    </div>
+                    <div class="card13-lower-div-two">
+                        <div class="card13-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Boys</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester13"><a class="a-gaming" href="">Discover more</a></div>
+            </div>
+
+            <!-- card13 complete -->
+
+            <div class="card14">
+                <h2 class="get-ready">Have more fun with family</h2>
+                <div class="card14-upper-main-div">
+                    <div class="card14-upper-div-one">
+                        <div class="card14-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Outdoor Play Sets</h5>
+                    </div>
+                    <div class="card14-upper-div-two">
+                        <div class="card14-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Learning Toys</h5>
+                    </div>
+
+                </div>
+
+                <!-- card14 lower div start -->
+
+                <div class="card14-lower-main-div">
+                    <div class="card14-lower-div-one">
+                        <div class="card14-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Action Figures</h5>
+                    </div>
+                    <div class="card14-lower-div-two">
+                        <div class="card14-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets-14">Pretend Play Toys</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester14"><a class="a-gaming" href="">See more</a></div>
+            </div>
+
+            <!-- card 14 complete -->
+
+            <div class="card15">
+                <h2 class="get-ready">Deals on top categories</h2>
+                <div class="card15-upper-main-div">
+                    <div class="card15-upper-div-one">
+                        <div class="card15-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Books</h5>
+                    </div>
+                    <div class="card15-upper-div-two">
+                        <div class="card15-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Fashion</h5>
+                    </div>
+
+                </div>
+
+                <!-- card15 lower div start -->
+
+                <div class="card15-lower-main-div">
+                    <div class="card15-lower-div-one">
+                        <div class="card15-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Pc</h5>
+                    </div>
+                    <div class="card15-lower-div-two">
+                        <div class="card15-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Beauty</h5>
+                    </div>
+
+                </div>
+                <div class="explore-more15"><a class="a-gaming" href="">Discover more</a></div>
+            </div>
+
+            <!-- card 15 complete -->
+
+            <div class="card16">
+                <h2 class="get-ready">Finds for Home</h2>
+                <div class="card16-upper-main-div">
+                    <div class="card16-upper-div-one">
+                        <div class="card16-upper-div-one-image"></div>
+                        <h5 class="ester-bunny">Kitchen</h5>
+                    </div>
+                    <div class="card16-upper-div-two">
+                        <div class="card16-upper-div-two-image"></div>
+                        <h5 class="Ester-baskets">Home Decor</h5>
+                    </div>
+
+                </div>
+
+                <!-- card16 lower div start -->
+
+                <div class="card16-lower-main-div">
+                    <div class="card16-lower-div-one">
+                        <div class="card16-lower-div-one-image"></div>
+                        <h5 class="ester-bunny">Dinning</h5>
+                    </div>
+                    <div class="card16-lower-div-two">
+                        <div class="card16-lower-div-two-image"></div>
+                        <h5 class="Ester-baskets">Smart Home</h5>
+                    </div>
+
+                </div>
+                <div class="shop-ester16"><a class="a-gaming" href="">See more</a></div>
+            </div>
+        </div>
+
+
+        <!-- /* card main div four and card 16 complete  and next div start */ -->
+
+        <div class="best-books-main-div">
+            <div class="best-books-div">
+                <h4 class="best-books-text">Best Sellers in Books</h4>
+            </div>
+            <div class="best-books-image-div">
+                <div class="ndy-book-div"></div>
+                <div class="theo-of-golden-book-div"></div>
+                <div class="catch-the-ester-div"></div>
+                <div class="correspondent-book-div"></div>
+                <div class="pete-the-cat-div"></div>
+                <div class="mad-libs-book-div"></div>
+                <div class="illama-book-div"></div>
+
+            </div>
+        </div>
+
+        <!-- best seller book  div complete and best seller in beauty start div start -->
+
+
+        <div class="best-beauty-main-div">
+            <div class="best-beauty-div">
+                <h4 class="best-beauty-text">Best Sellers in Beauty & Personal Care</h4>
+            </div>
+            <div class="best-beauty-image-div">
+                <div class="mighty-patch-div"></div>
+                <div class="makeup-remover-div"></div>
+                <div class="cotton-rounds-div"></div>
+                <div class="lash-sensa-div"></div>
+                <div class="clean-towels-div"></div>
+                <div class="biodance-div"></div>
+                <div class="elta-md-div"></div>
+
+            </div>
+        </div>
+
+        <!-- best seller in b eauty  div complete and sign in div five start start div start -->
+
+        <div class="signin-main-div">
+            <div class="personalized-recommendation-div">
+                <h3 class="personalized-text">See personalized recommendations</h3>
+                <button class="signin-btn">Sign in</button>
+                <p class="new-customer">New Customer? <a href="">start here</a></p>
+            </div>
+        </div>
+
+        <!-- personalized div complete and footer div start -->
+
+        <div class="amazon-footer-container">
+            <!-- Back to top bar -->
+            <div class="back-to-top">
+                <a href="#">Back to top</a>
+            </div>
+
+            <!-- Main footer content -->
+            <div class="footer-main-content">
+                <div class="footer-columns">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About Amazon</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Amazon Devices</a></li>
+                            <li><a href="#">Amazon Science</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h3>Make Money with Us</h3>
+                        <ul>
+                            <li><a href="#">Sell products on Amazon</a></li>
+                            <li><a href="#">Sell on Amazon Business</a></li>
+                            <li><a href="#">Sell apps on Amazon</a></li>
+                            <li><a href="#">Become an Affiliate</a></li>
+                            <li><a href="#">Advertise Your Products</a></li>
+                            <li><a href="#">Self-Publish with Us</a></li>
+                            <li><a href="#">Host an Amazon Hub</a></li>
+                            <li><a href="#">› See More Make Money with Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h3>Amazon Payment Products</h3>
+                        <ul>
+                            <li><a href="#">Amazon Business Card</a></li>
+                            <li><a href="#">Shop with Points</a></li>
+                            <li><a href="#">Reload Your Balance</a></li>
+                            <li><a href="#">Amazon Currency Converter</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h3>Let Us Help You</h3>
+                        <ul>
+                            <li><a href="#">Amazon and COVID-19</a></li>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Shipping Rates & Policies</a></li>
+                            <li><a href="#">Returns & Replacements</a></li>
+                            <li><a href="#">Manage Your Content and Devices</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="footer-divider">
+
+                <!-- Bottom Branding and Settings -->
+                <div class="footer-bottom-settings">
+                    <div class="footer-logo">
+                        <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo">
+                    </div>
+
+                    <div class="settings-selectors">
+                        <div class="selector-box">
+                            <span class="icon">🌐</span> English <span class="arrows">↕</span>
+                        </div>
+                        <div class="selector-box">
+                            $ USD - U.S. Dollar
+                        </div>
+                        <div class="selector-box">
+                            🇺🇸 United States
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- first footer complete and 2nd footer start -->
+
+        <div class="amazon-directory-footer">
+    <div class="directory-container">
+        <!-- Row 1 -->
+        <div class="footer-item">
+            <a href="#"><b>Amazon Music</b><br><span>Stream millions<br>of songs</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Amazon Ads</b><br><span>Reach customers<br>wherever they<br>spend their time</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>6pm</b><br><span>Score deals<br>on fashion brands</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>AbeBooks</b><br><span>Books, art<br>& collectibles</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>ACX</b><br><span>Audiobook<br>Publishing<br>Made Easy</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Sell on Amazon</b><br><span>Start a Selling<br>Account</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Veeqo</b><br><span>Shipping Software<br>Inventory<br>Management</span></a>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="footer-item">
+            <a href="#"><b>Amazon Business</b><br><span>Everything For<br>Your Business</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>AmazonGlobal</b><br><span>Ship Orders<br>Internationally</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Amazon Web Services</b><br><span>Scalable Cloud<br>Computing<br>Services</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Audible</b><br><span>Listen to Books &<br>Original<br>Audio<br>Performances</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Box Office Mojo</b><br><span>Find Movie<br>Box Office Data</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Goodreads</b><br><span>Book reviews<br>&<br>recommendations</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>IMDb</b><br><span>Movies, TV<br>& Celebrities</span></a>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="footer-item">
+            <a href="#"><b>IMDbPro</b><br><span>Get Info<br>Entertainment<br>Professionals Need</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Kindle Direct Publishing</b><br><span>Indie Digital &<br>Print Publishing<br>Made Easy</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Prime Video Direct</b><br><span>Video Distribution<br>Made Easy</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Shopbop</b><br><span>Designer<br>Fashion Brands</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Woot!</b><br><span>Deals and<br>Shenanigans</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Zappos</b><br><span>Shoes &<br>Clothing</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Ring</b><br><span>Smart Home<br>Security Systems</span></a>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="footer-item"></div> <!-- Empty for spacing -->
+        <div class="footer-item">
+            <a href="#"><b>eero WiFi</b><br><span>Stream 4K Video<br>in Every Room</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Blink</b><br><span>Smart Security<br>for Every Home</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Neighbors App</b><br><span>Real-Time Crime<br>& Safety Alerts</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>Amazon Subscription Boxes</b><br><span>Top subscription<br>boxes – right to<br>your door</span></a>
+        </div>
+        <div class="footer-item">
+            <a href="#"><b>PillPack</b><br><span>Pharmacy<br>Simplified</span></a>
+        </div>
+        <div class="footer-item"></div>
+    </div>
+
+    <!-- Legal Section -->
+    <div class="footer-legal">
+        <div class="legal-links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Consumer Health Data Privacy Disclosure</a>
+            <a href="#" class="privacy-choices">
+                Your Ads Privacy Choices 
+                <img src="https://m.media-amazon.com/images/I/01Z9S0Zz64L.png" alt="Privacy Icon" style="height:12px; vertical-align: middle; margin-left: 3px;">
+            </a>
+        </div>
+        <div class="copyright">
+            © 1996-2026, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+</div>
+
+    </div>
+</body>
+
+</html>
